@@ -17,7 +17,7 @@ console.log(z)
 //Iteración 2 
 
 let character = {name: 'Jack Sparrow', age: 10};
- let age = 25
+ let age = 25;
 console.log(age)
 
 
@@ -25,7 +25,7 @@ console.log(age)
 let firstName = "John"
  let lastName = "Snow"
  let edad = 24;
-console.log('soy ' + firstName + lastName + ' tengo ' + edad + 'años y me gustan los lobos ')
+ console.log("Soy " + firstName + " " + lastName + ", tengo " + edad + " años y me gustan los lobos.");
 
 
 
@@ -45,6 +45,6 @@ console.log(globalBasePrice)
 
 const car1 = {name: 'BMW m&m', basePrice: 50000, finalPrice: 60000};
 const car2 = {name: 'Chevrolet Corbina', basePrice: 70000, finalPrice: 80000};
-//const sum1 = {"finalPrice" + "globalBasePrice"};
-//console.log(sum1)
+
+
 
