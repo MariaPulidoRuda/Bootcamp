@@ -61,10 +61,4 @@ let rest = a%b;
 console.log(rest)
 
 
-/*var a = 13;
-var b = 5;
-var quo = Math.floor(a/b);
-var rem = a%b;
-console.log('Quotient = ',quo,'Remainder = ',rem);*/
 
-//1.3 Muestra mediante un console el resto de dividir 15 por 9.
