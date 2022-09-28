@@ -1,2 +1,1 @@
 # Bootcamp
-Ejemplos y ejercicios
