@@ -6,12 +6,11 @@ let myFavoriteHero;
  myFavouriteHero = "Hulk"; 
 
  //1.2 Crea una variable llamada x, asigna el valor 50 a ella.
-
+ let x;
  x = 50;
-
+ 
  //1.3 Crea una variable llamada 'h' con el valor 5 y otra 'y' con el valor 10. 
 
-let x;
 let h = 5;
  let y = 10;
 
@@ -47,20 +46,25 @@ console.log(sum)
 
 //Iteration3
 
+//1.1 Multiplica 10 por 5 y muestra el resultado mediante console.
+
 const product = 10*5;
 console.log(product)
 
+//1.2 Divide 10 por 2 y muestra el resultado en un console.
 
 const quotient = 10/2;
 console.log(quotient)
 
+
+//1.3 Muestra mediante un console el resto de dividir 15 por 9.
 
 let a = 15;
 let b = 9;
 rest = a%b;
 console.log(rest)
 
-
+//.4 Usa el correcto operador de asignación que resultará en o = 15, teniendo dos variables p = 10 y j = 5.
 
 let p = 10;
 let j = 5;
@@ -68,6 +72,7 @@ let o = p += j;
 console.log(o)
 
 
+//1.5 Usa el correcto operador de asignación que resultará en i = 50, teniendo dos variables c = 10 y m = 5.
 
 let c = 10;
 let m = 5;
@@ -123,7 +128,6 @@ console.log(rickAndMorty)
 
 
 
-
 //Iteración #5
 
 //En base al código siguiente, muestra los mensajes correctos por consola.
@@ -160,3 +164,28 @@ if ((number3 * 5 == number1) && (number1 * 2 == number2)) {
 if ((number2 / 2 == number1) || (number1 / 5 == number3)) {
   console.log("number2 entre 2 es igual a number1 O number1 entre 5 es igual a number3");
 }
+
+//Iteration 6
+
+//1.1 Crea un bucle for que vaya desde 0 a 9 y muestralo por consola.
+
+let bucle = [1,2,3,4,5,6,7,8,9];
+for (let i = 0; i < bucle.length; i++) {
+  const element = bucle[i];
+  console.log(element, i);
+}
+
+/*1.2 Crea un bucle for que vaya desde 0 a 9 y muestralo por consola solo 
+cuando el resto del numero dividido entre 2 sea 0.*/
+
+let bucles = [1,2,3,4,5,6,7,8,9];
+for (let i = 0; i <= bucles.length; i++) {
+ if (i % 2 === 0 )console.log(i)
+
+}
+
+
+/*1.3 Crea un bucle para conseguir dormir contando ovejas. 
+Este bucle empieza en 0 y termina en 10. 
+Muestra por consola un mensaje diciendo 'Intentando dormir' en cada vuelta del bucle 
+y cambia el mensaje en la última vuelta a 'Dormido!'.*/
