@@ -189,3 +189,10 @@ for (let i = 0; i <= bucles.length; i++) {
 Este bucle empieza en 0 y termina en 10. 
 Muestra por consola un mensaje diciendo 'Intentando dormir' en cada vuelta del bucle 
 y cambia el mensaje en la última vuelta a 'Dormido!'.*/
+
+
+let bucless = [0,1,2,3,4,5,6,7,8,9,10];
+for (let i = 0; i <= bucless.lenght; i++) {
+  if (i === 10) console.log('Dormido!')
+  else console.log('Intentando domrmir')
+}
