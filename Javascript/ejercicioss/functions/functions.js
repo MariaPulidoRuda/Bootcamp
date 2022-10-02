@@ -23,7 +23,17 @@ caso de que dos strings tenga la misma longitud deberá devolver el primero.
 
 Puedes usar este array para probar tu función:*/
 
-/*const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
-function findLongestWord(param) {
-  // insert code
-}*/
+const avengers = ["Hulk", "Thor", "IronMan", "Capitan A.", "Spiderman", "Capitan M."]
+
+function findLongestWord (param){
+    let longitud = 0;
+    let superheroe = "";
+    for(let i = 0; i < avengers.length; i++){  
+        if(avengers[i].length > longitud){
+            longitud = avengers[i].length;
+            superheroe = avengers[i]
+        }
+    }
+    return(superheroe)
+}
+console.log(findLongestWord(avengers));
