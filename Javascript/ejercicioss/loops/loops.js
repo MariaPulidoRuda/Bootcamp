@@ -26,3 +26,20 @@ for (const places of placesToTravel) {
     console.log(places)
 
 }
+
+/*Iteración #4: 
+
+Usa un **for...in** para imprimir por consola los datos del alienígena.. Puedes usar este objeto:*/
+
+let alien = {
+    name: 'Wormuck',
+    race: 'Cucusumusu',
+    planet: 'Eden',
+    weight: '259kg'
+}
+
+for (let key in alien) {
+
+    console.log(`La clave: ${key}, tiene como valor: ${alien[key]}`);
+}
+
