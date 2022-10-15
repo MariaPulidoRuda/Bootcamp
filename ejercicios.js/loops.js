@@ -12,8 +12,27 @@ if (str.includes("Camiseta")) {
 }
 
 }
-
-
+//iteration #2
+const alumns = [
+    { name: "Pepe Viruela", T1: false, T2: false, T3: true },
+    { name: "Lucia Aranda", T1: true, T2: false, T3: true },
+    { name: "Juan Miranda", T1: false, T2: true, T3: true },
+    { name: "Alfredo Blanco", T1: false, T2: false, T3: false },
+    { name: "Raquel Benito", T1: true, T2: true, T3: true },
+  ];
+  
+  for (let i = 0; i < alumns.length; i++) {
+    const alumn = alumns[i];
+    let trim = 0;
+    let isAproved;
+    for (const key in alumn) {
+      if (alumns[i][key] === true) {
+        trim += 1;
+      }
+      trim >= 2 ? (isAproved = true) : (isAproved = false);
+    }
+    console.log(${alumns[i].name} aproved is ${isAproved});
+  }
 /*Iteración #3:
 
 Usa un bucle forof para recorrer todos los destinos del array. Imprime en un ***console.log*** sus valores.
@@ -91,7 +110,25 @@ usar la función ***.includes()*** para comprobarlo.Puedes usar este array:*/
     console.log(elim);
 
     
-    
+    //iteration 7
+    /*Usa un bucle for...of para recorrer todos los juguetes y añade los que tengan más de 15 
+    ventas (sellCount) al array popularToys. Imprimelo por consola.. Puedes usar este array:*/
   
+    const popularToys = [];
+const toys = [
+    {id: 5, name: 'Buzz MyYear', sellCount: 10}, 
+    {id: 11, name: 'Action Woman', sellCount: 24}, 
+    {id: 23, name: 'Barbie Man', sellCount: 15}, 
+    {id: 40, name: 'El gato con Guantes', sellCount: 8},
+    {id: 40, name: 'El gato felix', sellCount: 35}
+]
+
+for (const toy of toys) {
+    if (toys[toy].sellCount >= 15) {
+        popularToys.push(toys[toy]);
+      }
+    }
+
+  console.log(popularToys);
 
 
