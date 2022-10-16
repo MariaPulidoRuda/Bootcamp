@@ -18,12 +18,11 @@
 
 console.log(categories1)
 
-      /* **Iteración #2: Mix Fors**
+/* **Iteración #2: Mix Fors**
        
-       Dado el siguiente javascript usa forof y forin para hacer la media del volumen de todos los sonidos favoritos que 
-       tienen los usuarios.
+Dado el siguiente javascript usa forof y forin para hacer la media del volumen de todos los sonidos favoritos que tienen los usuarios.
        
-       const users = [
+const users = [
     {name: 'Manolo el del bombo',
         favoritesSounds: {
             waves: {format: 'mp3', volume: 50},
@@ -54,25 +53,66 @@ console.log(categories1)
     },
 ]*/
 
+let volumenAmount = 0; 
+let volumenTotal = 0;
 
-       
-    /*Iteración #4: Métodos findArrayIndex**
-       
-       Crea una función llamada `findArrayIndex` que reciba como parametros un array de textos y un texto y devuelve la posición
-        del array cuando el valor del array sea igual al valor del texto que enviaste como parametro. Haz varios ejemplos y 
-        compruebalos.*/
-       
+for (const user of users) { 
+    
+    for (const soundIndex in user.favoritesSounds) {  /
       
+      volumenTotal += user.favoritesSounds[soundIndex].volume; 
+      volumenAmount++; 
+    }
+}
+
+    console.log(volumenTotal/volumenAmount);
+       
+//Iteración #4: Métodos findArrayIndex**
+       
+/*Crea una función llamada `findArrayIndex` que reciba como parametros un array de textos y un texto y devuelve la posición
+del array cuando el valor del array sea igual al valor del texto que enviaste como parametro. Haz varios ejemplos y 
+compruebalos.*/
+       
+        const arr = ["Caracol", "Mosquito", "Salamandra", "Ajolote"];
+
+        const findArrayIndex = (array, text) => {
+          return array.indexOf(text);
+        };
+        
+        console.log(findArrayIndex(arr, "Caracol"));
+        console.log(findArrayIndex(arr, "Mosquito"));
+        console.log(findArrayIndex(arr, "Salamandra"));
+        console.log(findArrayIndex(arr, "Ajolote"));
        
        
     
        
-      /* Iteración #5: Función rollDice**
+/* Iteración #5:
        
-       Crea una función llamada **rollDice()** que reciba como parametro el numero de caras que queramos que tenga el dado que deberá silumar el codigo dentro de la función. Como hemos dicho, que la función use el parametro para simular una tirada de dado y retornar el resultado. Si no se te ocurre como hacer un numero aleatorio no te preocupes! busca información sobre la función de javascript **Math.random();**
+Crea una función llamada **rollDice()** que reciba como parametro el numero de caras que queramos que tenga el dado que deberá 
+silumar el codigo dentro de la función. Como hemos dicho, que la función use el parametro para simular una tirada de dado y 
+retornar el resultado. Si no se te ocurre como hacer un numero aleatorio no te preocupes! busca información sobre la función de
+ javascript **Math.random();*/
        
-       **Iteración #6: Función swap**
+ const rollDice = (faces) => {
+    return parseInt(Math.random() * (faces + 1))
+}
+
+console.log(rollDice(6))
+ 
+ //Iteración #6: Función swap**
        
-       Crea una función llamada `swap()` que reciba un array y dos parametros que sean indices del array. La función deberá intercambiar la posición de los valores de los indices que hayamos enviado como parametro. Retorna el array resultante.
-       
-       Sugerencia de array: */
+/*Crea una función llamada `swap()` que reciba un array y dos parametros que sean indices del array. 
+La función deberá intercambiar la posición de los valores de los indices que hayamos enviado como parametro. Retorna el array 
+resultante.
+Sugerencia de array: */
+
+const swap = (array, a, b) => {
+    const element = array[a]
+    array[a] = array[b]
+    array[b] = element
+    return array
+    
+}
+
+console.log(swap(exampleArray, 0, 3))
